@@ -28,7 +28,8 @@ LibreTV 是一个轻量级、免费的在线视频搜索与观看平台，提供
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLibreSpark%2FLibreTV)  
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LibreSpark/LibreTV)  
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/LibreSpark/LibreTV) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/LibreSpark/LibreTV)
+[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/LibreSpark/LibreTV)
 
 ## ⚠️ 安全与隐私提醒
 
@@ -87,6 +88,17 @@ Pull Bot 会反复触发无效的 PR 和垃圾邮件，严重干扰项目维护�
 5. **可选：在"Settings" > "Environment Variables"中添加 `ADMINPASSWORD` 变量**
 6. 点击"Deploy"
 7. 可选：在"Settings" > "Environment Variables"中配置密码保护和设置按钮密码保护
+
+### Render
+
+1. Fork 或克隆本仓库到您的 GitHub 账户
+2. 登录 [Render](https://render.com/)，点击 "New Web Service"
+3. 选择您的仓库，Render 会自动检测到 `render.yaml` 配置文件
+4. 保持默认设置（无需设置环境变量，默认不启用密码保护）
+5. 点击 "Create Web Service"，等待部署完成
+6. 部署成功后即可访问您的 LibreTV 实例
+
+> 如需启用密码保护，可在 Render 控制台的环境变量中手动添加 `PASSWORD` 和/或 `ADMINPASSWORD`。
 
 ### Docker
 ```
